@@ -1,0 +1,105 @@
+/* Start Global */
+:root {
+    --main-color: lightpink;
+    --second-color: rgba(153, 50, 204, 45%);
+    --text-color: white;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    background-image: url("../images/the-death-of-socrates-6471743_1280.png");
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+}
+a:hover {
+    color: var(--main-color);
+}
+
+/* End Global */
+
+/* Start Table */
+table {
+    color: white;
+    table-layout: fixed;
+    width: calc(100% - 20px);
+    text-align: center;
+    margin: 40px 10px;
+}
+table * {
+    background-color: var(--second-color);
+    color: var(--text-color);
+} 
+table th, td, caption {
+    padding: 15px;
+}
+caption {
+    width: 98.9%;
+    transform: translateX(0.2%);
+}
+table tr {
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    table thead {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    }
+    
+    table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    }
+    
+    table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: left;
+    }
+    
+    table td::before {
+    content: attr(data-label);
+    float: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+    table tbody tr td:nth-child(3) a {
+        width: 54%;
+    }
+    table td:last-child {
+    border-bottom: 0;
+    }
+    table tbody tr:nth-child(4){
+        margin-bottom: 0; 
+    }
+    caption {
+        width: 96.6%;
+        transform: translateX(0.7%);
+    }
+}
