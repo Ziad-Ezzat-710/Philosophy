@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-weight: bold;
 }
 body {
     font-family: 'Tajawal', sans-serif;
@@ -51,7 +52,7 @@ table th, td, caption {
     padding: 15px;
 }
 caption {
-    width: 98.9%;
+    width: calc(100% - 5px);
     transform: translateX(0.2%);
 }
 table tr {
@@ -99,7 +100,7 @@ table tr {
         margin-bottom: 0; 
     }
     caption {
-        width: 96.6%;
+        width: calc(100% - 5px);
         transform: translateX(0.7%);
     }
 }
