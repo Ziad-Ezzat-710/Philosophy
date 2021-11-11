@@ -33,7 +33,14 @@ a {
 a:hover {
     color: var(--main-color);
 }
-
+ul {
+    list-style: none;
+    line-height: 1.5;
+}
+.complete {
+	background: grey;
+	color: black
+}
 /* End Global */
 
 /* Start Table */
@@ -44,7 +51,7 @@ table {
     text-align: center;
     margin: 40px 10px;
 }
-table * {
+table tr:not(.complete), table caption {
     background-color: var(--second-color);
     color: var(--text-color);
 } 
@@ -52,8 +59,8 @@ table th, td, caption {
     padding: 15px;
 }
 caption {
-    width: calc(100% - 5px);
-    transform: translateX(0.2%);
+    width: calc(100% - 12px);
+    transform: translateX(0.3%);
 }
 table tr {
     padding: 10px;
@@ -99,8 +106,8 @@ table tr {
     table tbody tr:nth-child(4){
         margin-bottom: 0; 
     }
-    caption {
-        width: calc(100% - 5px);
-        transform: translateX(0.7%);
+   caption {
+        width: calc(100% - 12px);
+        transform: translateX(0.5%);
     }
 }
